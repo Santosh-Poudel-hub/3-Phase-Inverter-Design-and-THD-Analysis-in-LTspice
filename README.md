@@ -1,6 +1,10 @@
 # 3-Phase Inverter Design and THD Analysis in LTspice
 
 This project demonstrates the design and simulation of a balanced 3-phase inverter using Sinusoidal Pulse Width Modulation (SPWM). The simulation focuses on power quality metrics, specifically achieving grid-compliance levels for Total Harmonic Distortion (THD).
+## Motivation
+Grid-connected inverters must meet strict power quality standards. 
+This project verifies IEEE 519 compliance through THD analysis of a 
+3-phase SPWM inverter.
 
 ## Technical Specifications
 - **Topology:** 3-Phase Bridge Inverter
@@ -15,6 +19,11 @@ The model was simulated for 500ms to ensure steady-state stability, bypassing in
 - **THD:** ~0.59% (Verified across all phases)
 - **Phase Separation:** Precise 120° displacement (147.50°	, -92.52°	, 27.46°)
 - **DC Offset:** -0.026A (Negligible bias)
+- ## Circuit Diagram
+![Circuit Diagram](Circuit%20Diagram.png)
+
+## Output Waveforms
+![Current Waveform](Current%20Wave%20form.png)
 
 ## Repository Contents
 - `Draft2.asc`: LTspice schematic file
